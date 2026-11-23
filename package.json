@@ -1,0 +1,21 @@
+{
+  "name": "thetokenlauncher-bep20-token",
+  "version": "1.0.0",
+  "description": "Fixed-supply BEP-20 token contract deployed by TheTokenLauncher on BNB Smart Chain and Base",
+  "homepage": "https://www.thetokenlauncher.com/",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:bsc": "hardhat run scripts/deploy.js --network bsc",
+    "deploy:bscTestnet": "hardhat run scripts/deploy.js --network bscTestnet",
+    "deploy:base": "hardhat run scripts/deploy.js --network base"
+  },
+  "keywords": ["bnb", "bsc", "bep20", "base", "token", "solidity", "no-code"],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0"
+  }
+}
